@@ -11,7 +11,7 @@
 <body>
     <h1>Student Registration Form</h1>
 
-    <table align="center">
+    <table align="center" cellpadding="10">
         <tr>
             <td>
                 <label for="firstname">First Name : </label>
@@ -39,6 +39,34 @@
         <tr>
             <td><label for="dob">Date of Birth :</label></td>
             <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="email">Email Id:</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="mobile">Mobile Number: </label>
+            </td>
+            <td>
+                <input type="number" maxlength="10" id="mobile" name="mobile">
+            </td>
+            <td>
+                <p>(max 10 digits number only)</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>Male: <input type="radio" name="gender" value="Male"></td>
+            <td>Female: <input type="radio" name="gender" value="Female"></td>
+            <td>Other: <input type="radio" name="gender" value="Other"></td>
         </tr>
     </table>
 </body>
