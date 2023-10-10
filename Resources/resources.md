@@ -15,3 +15,6 @@
 ## Good CSS Documentation
 - https://css-tricks.com/
 - https://developer.mozilla.org/en-US/docs/Web/CSS
+
+## Index of CSS Properties
+- https://www.w3.org/Style/CSS/all-properties.en.html
