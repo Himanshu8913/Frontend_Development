@@ -5,3 +5,13 @@
 
 ## To Get a Color Palette
 - https://color.adobe.com/explore
+
+-------------------------------------------------
+
+## To Get Best Fonts
+- https://www.fontpair.co/all
+- https://fonts.google.com/
+
+## Good CSS Documentation
+- https://css-tricks.com/
+- https://developer.mozilla.org/en-US/docs/Web/CSS
