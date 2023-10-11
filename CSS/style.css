@@ -36,3 +36,7 @@ div span {
 div .extra {
     text-decoration-line: underline;
 }
+
+div > .mid-text {
+    color: #00CCBF;
+}
