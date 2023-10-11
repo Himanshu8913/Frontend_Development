@@ -40,3 +40,7 @@ div .extra {
 div > .mid-text {
     color: #00CCBF;
 }
+
+h2 ~ h4 {
+    background-color: chocolate;
+}
