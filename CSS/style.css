@@ -28,3 +28,7 @@ input[disabled] {
 h1, h3 {
     background-color: red;
 }
+
+div span {
+    background-color: burlywood;
+}
