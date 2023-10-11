@@ -7,3 +7,8 @@ h3 {
     /* This is a universal selector whatever you write here is applied to everything */
     background-color: #B2BEBF;
 }
+
+h2 {
+    font-size: large;
+    background-color: #00CCBF;
+}
