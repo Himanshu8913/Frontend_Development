@@ -24,3 +24,7 @@ header {
 input[disabled] {
     background-color: beige;
 }
+
+h1, h3 {
+    background-color: red;
+}
