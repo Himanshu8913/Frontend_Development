@@ -20,3 +20,7 @@ header {
     text-decoration-line: underline;
     text-decoration-style: wavy;
 }
+
+input[disabled] {
+    background-color: beige;
+}
