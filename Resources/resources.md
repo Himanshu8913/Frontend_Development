@@ -18,3 +18,6 @@
 
 ## Index of CSS Properties
 - https://www.w3.org/Style/CSS/all-properties.en.html
+
+## CSS Combinators
+- https://www.w3schools.com/css/css_combinators.asp
