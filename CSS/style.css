@@ -1,14 +1,17 @@
-h3 {
-    color: #889C9B;
-    font-size: 15px;
-}
-
 *{
     /* This is a universal selector whatever you write here is applied to everything */
-    background-color: #B2BEBF;
+ 
 }
 
-h2 {
-    font-size: large;
-    background-color: #00CCBF;
+body {
+    background-color: #f3f2ef;
+}
+
+header {
+    background-color: white;
+}
+
+.mid-text {
+    font-weight: bolder;
+    font-size: medium;
 }
