@@ -15,3 +15,8 @@ header {
     font-weight: bolder;
     font-size: medium;
 }
+
+#head-text {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
