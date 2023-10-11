@@ -30,17 +30,26 @@ h1, h3 {
 }
 
 div span {
+    /* Descendant Combinator */
     background-color: burlywood;
 }
 
 div .extra {
+    /* Deep Descendant */
     text-decoration-line: underline;
 }
 
 div > .mid-text {
+    /* Child Combinator */
     color: #00CCBF;
 }
 
 h2 ~ h4 {
+    /* Sibling Combinator */
     background-color: chocolate;
+}
+
+h1 + h3 {
+    /* Adjacent Sibling Selector */
+    color: bisque;
 }
