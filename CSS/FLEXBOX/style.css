@@ -14,7 +14,8 @@ html {
     /* flex-direction: column; (by default --> row)*/
     /* flex-wrap: wrap; To get full space according to content */  
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly; /* To arrange elements on main axis */
+    align-items: center;/* To arrange elements on cross axis  */
 }
 
 /* flex items */
