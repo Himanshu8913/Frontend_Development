@@ -53,3 +53,34 @@ h1 + h3 {
     /* Adjacent Sibling Selector */
     color: bisque;
 }
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: brown;
+}
+
+div::before {
+    content: "```";
+}
+
+div::after {
+    content: "```";
+}
+
+div :first-child {
+    /* this will style the first child inside div */
+    font-size: smaller;
+}
+ 
+div:first-child {
+    /* this will style the div which is first child of any tag/element */
+    font-size: smaller;
+}
+
+li:nth-child(even) {
+    /* it will style every even row in a list or table */
+    background-color: yellow;
+}
