@@ -16,7 +16,7 @@ html {
     flex-flow: row wrap;
     justify-content: start; /* To arrange elements on main axis */
     align-items: center;/* To arrange elements on cross axis  */
-    align-content: space-between; /* To arrange elements on cross axis  */
+    align-content: start; /* To arrange elements on cross axis  */
 }
 
 /* flex items */
@@ -28,6 +28,16 @@ html {
     /* max-width: 200px; */
     max-height: 100px;
 }
+
+#child1 {
+    /* flex-basis: 100%; */ /* It will make child1 100% width*/
+    flex-grow: 3; /* It will take all extra space and allocate to child1*/
+}
+
+#child2 {
+    flex-grow: 1;
+}
 /* Flex direction ==> Main Axis 
     flex-direction: row; --> Row Main Axis then othe is Cross Axis 
-    fles-direction: column; --> Column Main Axis then othe is Cross Axis*/
+    fles-direction: column; --> Column Main Axis then othe is Cross Axis
+*/

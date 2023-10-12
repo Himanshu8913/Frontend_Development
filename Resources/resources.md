@@ -48,3 +48,9 @@
 - https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
 
 -------------------------------------------------
+
+## Flex Basis
+- https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+
+## Flex Grow
+- https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
