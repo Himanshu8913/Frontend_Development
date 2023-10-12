@@ -19,14 +19,18 @@
 ## Index of CSS Properties
 - https://www.w3.org/Style/CSS/all-properties.en.html
 
+-------------------------------------------------
+
 ## CSS Combinators
 - https://www.w3schools.com/css/css_combinators.asp
 - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
 - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors
 
+
 ## Pseudo Classes and Pseudo Elements
 - https://www.w3schools.com/css/css_pseudo_elements.asp
 
+-------------------------------------------------
 ## Box Model - box-sizing
 - https://css-tricks.com/almanac/properties/b/box-sizing/
 
@@ -35,3 +39,8 @@
 
 ## FlexBox Game To Learn Better
 - https://flexboxfroggy.com/
+
+## Align Items
+- https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+
+-------------------------------------------------
