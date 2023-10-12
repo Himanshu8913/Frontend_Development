@@ -17,3 +17,12 @@
     padding: 10px; /* padding gave internal spacing */
     margin-top: 30px; /* margin is the space outside of the box */
 }
+
+* {
+    /* border-box -> suppose width set to 200px then whole box contain 200px 
+    border(xpx) + content(ypx) + padding(zpx) == 200px */
+    box-sizing: border-box; /* Recommended */
+    /* content-box -> if width set to 200px the rest everything is not added
+    border(xpx) + content(ypx) + padding(zpx) == 200px + xpx + ypx + zpx */
+    /* box-sizing: content-box; (Default)*/ 
+}
