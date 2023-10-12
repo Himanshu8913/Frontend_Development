@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* flex container */
+#parent {
+    border: solid red 10px;
+    display: flex;
+    /* flex-direction: column; (by default --> row)*/
+    /* flex-wrap: wrap; To get full space according to content */  
+    flex-flow: row wrap;
+}
+
+/* flex items */
+#parent div {
+    border: solid blue 2px;
+    padding: 20px;
+    background-color: bisque;
+    min-width: 100px; /* minimum 100px for all child divs */
+}
