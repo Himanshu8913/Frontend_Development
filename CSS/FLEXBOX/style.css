@@ -14,8 +14,9 @@ html {
     /* flex-direction: column; (by default --> row)*/
     /* flex-wrap: wrap; To get full space according to content */  
     flex-flow: row wrap;
-    justify-content: space-evenly; /* To arrange elements on main axis */
+    justify-content: start; /* To arrange elements on main axis */
     align-items: center;/* To arrange elements on cross axis  */
+    align-content: space-between; /* To arrange elements on cross axis  */
 }
 
 /* flex items */
@@ -24,7 +25,7 @@ html {
     padding: 20px;
     background-color: bisque;
     min-width: 100px; /* minimum 100px for all child divs */
-    max-width: 200px;
+    /* max-width: 200px; */
     max-height: 100px;
 }
 /* Flex direction ==> Main Axis 
