@@ -29,3 +29,6 @@
 
 ## Box Model - box-sizing
 - https://css-tricks.com/almanac/properties/b/box-sizing/
+
+## Justify Content
+- https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
