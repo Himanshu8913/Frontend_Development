@@ -26,3 +26,6 @@
 
 ## Pseudo Classes and Pseudo Elements
 - https://www.w3schools.com/css/css_pseudo_elements.asp
+
+## Box Model - box-sizing
+- https://css-tricks.com/almanac/properties/b/box-sizing/
