@@ -1,0 +1,19 @@
+#demo {
+    width: 200px; /* by default width is 100%*/
+    border: solid red 10px;
+    /* border-style: solid;
+    border-color: red;
+    border-width: 5px; */
+    padding: 10px; /* padding gave internal spacing */
+    margin-left: 20px;
+}
+
+#demo1 {
+    width: 200px; /* by default width is 100%*/
+    border: solid green 10px;
+    /* border-style: solid;
+    border-color: red;
+    border-width: 5px; */
+    padding: 10px; /* padding gave internal spacing */
+    margin-top: 30px; /* margin is the space outside of the box */
+}
