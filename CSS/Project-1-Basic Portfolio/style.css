@@ -1,0 +1,22 @@
+:root {
+    --teal: #031634;
+    --cobalt: #033649;
+    --turquoise: #066464;
+    --biege: #CEB280;
+    --gold: #EADDCC;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    /* Browser has some margin and padding by default so we need to reset it. */
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: var(--teal);
+}
