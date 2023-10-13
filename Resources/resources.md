@@ -54,3 +54,8 @@
 
 ## Flex Grow
 - https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+
+-------------------------------------------------
+## CSS Gradient Style
+- https://developer.mozilla.org/en-US/docs/Web/CSS/gradient
+- https://cssgradient.io/
