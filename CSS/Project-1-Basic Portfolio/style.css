@@ -24,3 +24,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+/* If we add margin in 2 elements vertically then it won't add (10px + 10px vert margin) ==> 10px
+(20px + 10px vert margin) ==> 20px --> It will always take large value  */
