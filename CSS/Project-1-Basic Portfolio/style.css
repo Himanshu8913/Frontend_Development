@@ -110,6 +110,18 @@ nav li:first-child {
     flex-grow: 1;
     font-size: 1.5rem;
 }
+
+.resume-button {
+    background-color: orangered;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.resume-button:hover {
+    color: white;
+    background: linear-gradient(145deg, rgba(247,106,82,1) 26%, rgba(222,120,66,1) 36%, rgba(240,86,71,1) 47%);
+}
+
 /* margin 1em ==> em == size according to parent 
 margin 1rem ==> rem == size according to HTML
 margin 1px ==> px == It won't scale accordingly */
