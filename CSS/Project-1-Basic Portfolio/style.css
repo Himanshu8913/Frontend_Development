@@ -80,6 +80,36 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 3rem;
 }
 
+nav {
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--biege);
+    text-decoration: underline;
+}
+
+nav li:first-child {
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
 /* margin 1em ==> em == size according to parent 
 margin 1rem ==> rem == size according to HTML
 margin 1px ==> px == It won't scale accordingly */
