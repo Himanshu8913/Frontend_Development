@@ -49,6 +49,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+#experience ul {
+    padding: 0;
+    font-size: 1.2rem;
+    
+}
+
+#experience li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+#experience a {
+    color: white;
+
+}
+
 /* margin 1em ==> em == size according to parent 
 margin 1rem ==> rem == size according to HTML
 margin 1px ==> px == It won't scale accordingly */
