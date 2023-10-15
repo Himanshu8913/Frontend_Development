@@ -133,6 +133,17 @@ nav li:first-child {
         flex-basis: auto;
     }
 }
+
+.gradient-section {
+    height: 2px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
 /* margin 1em ==> em == size according to parent 
 margin 1rem ==> rem == size according to HTML
 margin 1px ==> px == It won't scale accordingly */
