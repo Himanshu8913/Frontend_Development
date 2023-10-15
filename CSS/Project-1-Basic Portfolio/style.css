@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro {
-    padding-bottom: 5rem;
+    padding: 4rem 1rem 5rem 1rem; /* TRBL */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #intro p{
@@ -90,9 +92,10 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
     gap: 2rem;
+    margin-right: 2rem;
 }
 
 nav a {
@@ -107,8 +110,10 @@ nav a:hover {
 }
 
 nav li:first-child {
-    flex-grow: 1;
+    /* flex-grow: 1; we will write media query to bring this functionality back */
+    flex-basis: 100%;
     font-size: 1.5rem;
+    margin-left: 3rem;
 }
 
 .resume-button {
@@ -122,6 +127,12 @@ nav li:first-child {
     background: linear-gradient(145deg, rgba(247,106,82,1) 26%, rgba(222,120,66,1) 36%, rgba(240,86,71,1) 47%);
 }
 
+@media (min-width: 600px) {
+    nav li:first-child {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+}
 /* margin 1em ==> em == size according to parent 
 margin 1rem ==> rem == size according to HTML
 margin 1px ==> px == It won't scale accordingly */
