@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    border: solid 1px black;
+    border-radius: 5px;
+    /* display: flex; */
+    margin: 15rem 20rem;
+    flex-wrap: wrap;
+}
+
+#profile {
+    height: 60px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+#profile img {
+    margin-top: 1rem;
+    margin-left: 2rem; 
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#name {
+    padding: 10px;
+    display: flex;
+    /* margin-top: 1rem;
+    margin-left: 1rem; */
+    margin: 1rem 1rem;
+}
+
+.userid {
+    font-weight: lighter;
+    margin-top: 0.2rem;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#details {
+    display: flex;
+    justify-content: space-around;
+}
+
+#content {
+    display: flex;
+}
+
+.impression {
+    width: 32px;
+    height: 32px;
+}
