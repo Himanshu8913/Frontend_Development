@@ -24,7 +24,16 @@ html {
     border: 5px solid red;
     border-top: none;
     /* background-color: blue; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
+}
+
+@keyframes rotator {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 .moving:hover {
@@ -35,5 +44,9 @@ html {
     transition-property: all;
     transition-timing-function: ease-out; 
     */
-    transition: all 4s 1s ease-out ;
+    /* transition: all 4s 1s ease-out ; */
+    animation-name: rotator;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
