@@ -27,6 +27,8 @@ html {
 
 .moving:hover {
     transform: scale(2, 2);
+    background-color: red;
     transition-delay: 2s; /* start making the state change after 2s */
     transition-duration: 5s; /* take 5s after the start to move to the final state */
+    transition-property: background-color;
 }
