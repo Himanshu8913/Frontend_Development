@@ -22,26 +22,24 @@ html {
     width: 50px;
     height: 50px;
     border: 5px solid red;
-    border-top: none;
-    /* background-color: blue; */
-    /* border-radius: 50%; */
+    /* border-top: none; */
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: rotator;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes rotator {
     0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(90deg);
+        transform: translateX(-500px);
     }
     50% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(270deg);
+        transform: translateX(500px);
     }
     100% {
-        transform: rotate(360deg);
+        transform: translateX(-500px);
     }
 }
 
@@ -54,8 +52,8 @@ html {
     transition-timing-function: ease-out; 
     */
     /* transition: all 4s 1s ease-out ; */
-    animation-name: rotator;
+    /* animation-name: rotator;
     animation-iteration-count: infinite;
     animation-duration: 2s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out; */
 }
