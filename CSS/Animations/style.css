@@ -30,8 +30,10 @@ html {
 .moving:hover {
     transform: rotate(360deg);
     /* background-color: red; */
-    transition-delay: 0; /* start making the state change after 2s */
-    transition-duration: 4s; /* take 5s after the start to move to the final state */
+    /* transition-delay: 0;  start making the state change after 2s 
+    transition-duration: 4s;  take 5s after the start to move to the final state 
     transition-property: all;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-out; 
+    */
+    transition: all 4s 1s ease-out ;
 }
