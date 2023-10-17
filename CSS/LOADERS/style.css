@@ -5,3 +5,28 @@ html {
 *, *::after, *::before {
     box-sizing: inherit;
 }
+
+.loader1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.loader1 > div {
+    border: 5px solid red;
+    width: 4rem;
+    height: 4rem;
+    border-top: 5px solid #f0eeeb;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
