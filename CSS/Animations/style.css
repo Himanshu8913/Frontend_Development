@@ -21,15 +21,17 @@ html {
 .moving {
     width: 50px;
     height: 50px;
-    background-color: blue;
-    /* border-radius: 50%; */
+    border: 5px solid red;
+    border-top: none;
+    /* background-color: blue; */
+    border-radius: 50%;
 }
 
 .moving:hover {
-    transform: rotate(90deg);
-    background-color: red;
+    transform: rotate(360deg);
+    /* background-color: red; */
     transition-delay: 0; /* start making the state change after 2s */
-    transition-duration: 5s; /* take 5s after the start to move to the final state */
+    transition-duration: 4s; /* take 5s after the start to move to the final state */
     transition-property: all;
     transition-timing-function: ease-out;
 }
