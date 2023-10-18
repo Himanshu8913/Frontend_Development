@@ -59,3 +59,6 @@
 ## CSS Gradient Style
 - https://developer.mozilla.org/en-US/docs/Web/CSS/gradient
 - https://cssgradient.io/
+
+## Custom Loaders
+- https://loading.io/css
