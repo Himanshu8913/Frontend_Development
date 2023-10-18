@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 60px;
+    background-color: orangered;
+}
+
+header > p {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.bold-size {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 300px;
+    height: 500px;
+    background-color: orange;
+    /* justify-content: center; */
+}
+
+.sidebar {
+    width: 300px;
+    height: 500px;
+    background-color: orange;
+}
+
+.main {
+    height: 500px;
+    width: 680px;
+    background-color: blanchedalmond;
+}
+
+.middle > div > p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
