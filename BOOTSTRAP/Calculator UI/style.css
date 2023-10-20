@@ -5,3 +5,7 @@ html {
 *, *::after, *::before {
     box-sizing: inherit;
 }
+
+h2 {
+    margin-top: 2rem;
+}
