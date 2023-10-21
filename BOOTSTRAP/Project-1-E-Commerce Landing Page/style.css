@@ -19,7 +19,27 @@ html {
     background-color: white;
 }
 
+@media (max-width: 600px) {
+    .product-card {
+        max-width: 275px;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 920px) {
+    .product-card {
+        max-width: 275px;
+        margin: 1rem auto;
+    }
+}
+
+.product-image-container {
+    display: flex;
+    margin: 2rem;
+    height: 130px;
+}
+
 .product-image {
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 100px;
+    max-width: 160px;
 }
