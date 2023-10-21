@@ -51,8 +51,8 @@ nav li a:hover {
 
 /* Bug #2 (Medium) */
 .column {
-    display: inline-block;
-    width: 50%;
+    display: flex;
+    width: 100%;
 }
 
 /* Bug #3 (Hard) */
