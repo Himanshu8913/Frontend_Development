@@ -45,8 +45,8 @@ nav li a:hover {
 }
 
 /* Bug #1 (Easy) */
-section {
-    
+#contact {
+    background-color: #eaeaea;
 }
 
 /* Bug #2 (Medium) */
