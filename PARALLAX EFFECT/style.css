@@ -61,8 +61,17 @@ section {
 
 .image div {
     position: absolute;
-    top: 50%;
+    top: 45%;
     /* left: 50%; */
     width: 100%;
     text-align: center;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.first-image div {
+    background-color: black;
+    padding: 5px;
 }
