@@ -51,3 +51,9 @@ section {
     background-color: #282e34;
     color: #ddd;
 }
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
