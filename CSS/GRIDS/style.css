@@ -31,3 +31,11 @@ h1 {
     padding: 3rem;
     background-color: brown;
 }
+
+.item7 {
+    grid-column: span 2;
+}
+
+.item8 {
+    grid-column: span 3;
+}
