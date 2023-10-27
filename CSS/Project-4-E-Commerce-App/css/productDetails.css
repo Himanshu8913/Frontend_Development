@@ -8,3 +8,7 @@
 .product-img img {
     width: 100%;
 }
+
+.product-details-box {
+    flex-basis: 60%;  /* 60% for product details and around 30% for product picture rest 10% border or space etc */
+}
