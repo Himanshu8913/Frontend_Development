@@ -12,3 +12,32 @@
 .product-details-box {
     flex-basis: 60%;  /* 60% for product details and around 30% for product picture rest 10% border or space etc */
 }
+
+.product-name {
+    font-size: 3rem;
+}
+
+.product-price {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.product-description {
+    margin-top: 1.5rem;
+}
+
+.product-description-title {
+    color: var(--mid-gray);
+    margin-bottom: 1rem;
+}
+
+.product-description-data {
+    font-size: 1rem;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.product-details-action {
+    margin-top: 1.5rem;
+    width: 250px;
+}
