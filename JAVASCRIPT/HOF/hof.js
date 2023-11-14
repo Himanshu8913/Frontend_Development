@@ -1,5 +1,9 @@
-// higher order function -> there are functions which take another function as arguments 
-// these are called higher order functions
+/*
+* higher order function -> there are functions which take another function as arguments
+* HOF :- Higher order functions are those functions which takes a function as argument, 
+* the function that you pass as an argument is a callback function.
+* these are called higher order functions
+*/
 
 function f(x, fn) {
     /**
