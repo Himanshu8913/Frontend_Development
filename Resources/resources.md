@@ -72,3 +72,9 @@
 - https://github.com/singhsanket143/Node-Dec-2022/tree/468ba6a8cf414020a373397c265e1a645b2b7b34
 ## Scopes In JavaScript
 - https://mazurov.github.io/eslevels-demo/
+
+-------------------------------------------------
+## To get free placeholder images for demo
+- http://via.placeholder.com/640x360
+- https://dummyimage.com/640x360/fff/aaa
+- https://placebear.com/640/360
