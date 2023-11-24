@@ -68,10 +68,13 @@
 
 -------------------------------------------------
 
-## Notes and Rederences
+## Notes and References
 - https://github.com/singhsanket143/Node-Dec-2022/tree/468ba6a8cf414020a373397c265e1a645b2b7b34
 ## Scopes In JavaScript
 - https://mazurov.github.io/eslevels-demo/
+
+## Javascript Articles and Tutorials
+- https://javascript.info/
 
 -------------------------------------------------
 ## To get free placeholder images for demo
