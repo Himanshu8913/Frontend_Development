@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.input-section {
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.todo-input {
+    flex-basis: 50%;
+}
