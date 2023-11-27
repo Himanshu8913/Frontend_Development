@@ -6,6 +6,10 @@ let getTodosButton = document.getElementById('get-todos');
 //     console.log("clicked");
 // });
 
-getTodosButton.onclick = () => {
+// getTodosButton.onclick = () => {
+//     console.log("clicked");
+// }
+
+function clickBtn() {
     console.log("clicked");
 }
