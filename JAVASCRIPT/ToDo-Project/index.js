@@ -1,12 +1,14 @@
 console.log("Welcome to my todo app");
 
+let todos = [];
+
 let todoDataSection = document.getElementById("todo-data");
 let saveButton = document.getElementById("save-todo");
 let todoInputBar = document.getElementById("todo-input-bar");
 
 todoInputBar.addEventListener("keyup", function toggleSaveButton() {
     let todotext = todoInputBar.value;
-    console.log(todotext);
+    // console.log(todotext);
     if(todotext.length == 0) {
         if(saveButton.classList.contains("disabled")) return;
         saveButton.classList.add("disabled");
@@ -20,11 +22,13 @@ saveButton.addEventListener("click", function getTextAndAddTodo() {
     if(todotext.length == 0) {
         return ;
     }
-    addTodo(todotext);
+    todos.push(todotext);
+    addTodo(todotext, todos.length);
+    console.log("todo text: ", todotext + "todos: ", todos);
     todoInputBar.value = '';
 });
 
-function addTodo(todoData) {
+function addTodo(todoData, todoCount) {
     let rowDiv = document.createElement("div");
     let todoItem = document.createElement("div");
     let todoNumber = document.createElement("div");
@@ -45,7 +49,7 @@ function addTodo(todoData) {
     deleteButton.classList.add("btn", "btn-danger");
     finishedButton.classList.add("btn", "btn-success");
 
-    todoNumber.textContent = "1";
+    todoNumber.textContent = `${todoCount}`;
     todoDetail.textContent = todoData; // sets the todo text send from input element
     todoStatus.textContent = "In progress";
     deleteButton.textContent = "Delete";
