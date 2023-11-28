@@ -1,6 +1,29 @@
 console.log("Welcome to my todo app");
 
-let todoDataSection = document.getElementById("todo-data")
+let todoDataSection = document.getElementById("todo-data");
+let saveButton = document.getElementById("save-todo");
+let todoInputBar = document.getElementById("todo-input-bar");
+
+todoInputBar.addEventListener("keyup", function toggleSaveButton() {
+    let todotext = todoInputBar.value;
+    console.log(todotext);
+    if(todotext.length == 0) {
+        if(saveButton.classList.contains("disabled")) return;
+        saveButton.classList.add("disabled");
+    }
+    else if(saveButton.classList.contains("disabled")) {
+        saveButton.classList.remove("disabled");
+    }
+});
+saveButton.addEventListener("click", function getTextAndAddTodo() {
+    let todotext = todoInputBar.value;
+    if(todotext.length == 0) {
+        return ;
+    }
+    addTodo(todotext);
+    todoInputBar.value = '';
+});
+
 function addTodo(todoData) {
     let rowDiv = document.createElement("div");
     let todoItem = document.createElement("div");
