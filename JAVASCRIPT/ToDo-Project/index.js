@@ -2,7 +2,7 @@ console.log("Welcome to my todo app");
 
 let todos = [];
 
-let todoDataSection = document.getElementById("todo-data");
+let todoDataList = document.getElementById("todo-data-list");
 let saveButton = document.getElementById("save-todo");
 let todoInputBar = document.getElementById("todo-input-bar");
 
@@ -28,6 +28,18 @@ saveButton.addEventListener("click", function getTextAndAddTodo() {
     todoInputBar.value = '';
 });
 
+function removeTodo(event) {
+    // console.log("clicked", event.target);
+    // event.target.parentElement.parentElement.parentElement.remove();
+    let deleteButtonPressed = event.target;
+    let indexTobeRemoved = Number(deleteButtonPressed.getAttribute("todo-idx"));
+    todos.splice(indexTobeRemoved, 1);
+    todoDataList.innerHTML = '';
+    todos.forEach((element, idx) => {
+        addTodo(element, idx+1);
+    });
+}
+
 function addTodo(todoData, todoCount) {
     let rowDiv = document.createElement("div");
     let todoItem = document.createElement("div");
@@ -46,8 +58,11 @@ function addTodo(todoData, todoCount) {
     todoDetail.classList.add("todo-detail", "text-muted");
     todoStatus.classList.add("todo-status", "text-muted");
     todoActions.classList.add("todo-actions", "d-flex", "justify-content-start", "gap-2");
-    deleteButton.classList.add("btn", "btn-danger");
-    finishedButton.classList.add("btn", "btn-success");
+    deleteButton.classList.add("btn", "btn-danger", "delete-todo");
+    finishedButton.classList.add("btn", "btn-success", "finish-todo");
+
+    deleteButton.setAttribute("todo-idx", todoCount-1);
+    deleteButton.onclick = removeTodo;
 
     todoNumber.textContent = `${todoCount}`;
     todoDetail.textContent = todoData; // sets the todo text send from input element
@@ -66,7 +81,7 @@ function addTodo(todoData, todoCount) {
     rowDiv.appendChild(todoItem);
     rowDiv.appendChild(hr);
 
-    todoDataSection.appendChild(rowDiv);
+    todoDataList.appendChild(rowDiv);
 }
 
 
