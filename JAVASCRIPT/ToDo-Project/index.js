@@ -23,6 +23,7 @@ todoInputBar.addEventListener("keyup", function toggleSaveButton() {
         saveButton.classList.remove("disabled");
     }
 });
+
 saveButton.addEventListener("click", function getTextAndAddTodo() {
     let todotext = todoInputBar.value;
     if(todotext.length == 0) {
@@ -125,6 +126,7 @@ function addTodo(todo, todoCount) {
     editButton.classList.add("btn", "btn-warning", "edit-todo");
     hiddenInput.classList.add("form-control", "todo-detail");
 
+    // adding attributes
     finishedButton.setAttribute("todo-idx", todoCount-1);
     deleteButton.setAttribute("todo-idx", todoCount-1);
     editButton.setAttribute("todo-idx", todoCount-1);
@@ -132,6 +134,7 @@ function addTodo(todo, todoCount) {
     hiddenInput.setAttribute("todo-idx", todoCount-1);
     hiddenInput.type = "hidden"
 
+    // adding click listeners
     deleteButton.onclick = removeTodo;
     finishedButton.onclick = finishTodo;
     editButton.onclick = editTodo;
@@ -144,6 +147,7 @@ function addTodo(todo, todoCount) {
     finishedButton.textContent = todo.finishButtontext;
     editButton.textContent = "Edit";
 
+    // creating the div on dom
     todoActions.appendChild(deleteButton);
     todoActions.appendChild(finishedButton);
     todoActions.appendChild(editButton);
