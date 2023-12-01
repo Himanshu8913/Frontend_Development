@@ -5,6 +5,12 @@ let todos = [];
 let todoDataList = document.getElementById("todo-data-list");
 let saveButton = document.getElementById("save-todo");
 let todoInputBar = document.getElementById("todo-input-bar");
+let getPendingTodosButton = document.getElementById("get-todos");
+
+getPendingTodosButton.addEventListener("click", () => {
+    todos = todos.filter((todo) => todo.status != "Finished");
+    reRenderTodos();
+});
 
 todoInputBar.addEventListener("keyup", function toggleSaveButton() {
     let todotext = todoInputBar.value;
