@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let paddleY = 0;
     let dPy = 5; // displacement for paddle in y-direction
     document.addEventListener("keydown", (event) => {
-        // console.log("down", event.key);
+        event.preventDefault(); // this prevent the execution of the default event behavior
         if(event.key == "ArrowDown" && paddleY < (table.offsetHeight - paddle.offsetHeight)) {
             console.log("arrow-up key pressed");
             paddleY += dPy;
