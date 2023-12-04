@@ -8,11 +8,18 @@ html {
     box-sizing: inherit;
 }
 
+h1 {
+    margin-left: 20rem;
+    margin-top: 2rem;
+}
+
 #ping-pong-table {
     border: 2px solid black;
-    width: 700px;
+    width: 900px;
     height: 400px;
     position: relative;
+    margin-left: 12rem;
+    margin-top: 2rem;
 }
 
 #paddle {
