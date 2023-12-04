@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 10);
 
     let paddleY = 0;
-    let dPy = 25; // displacement for paddle in y-direction
+    let dPy = 10; // displacement for paddle in y-direction
     document.addEventListener("keydown", (event) => {
         event.preventDefault(); // this prevent the execution of the default event behavior
         if(event.key == "ArrowDown" && paddleY < (table.offsetHeight - paddle.offsetHeight)) {
@@ -57,6 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
             paddleY += (-1)*dPy;
         }
         paddle.style.top = `${paddleY}px`;
-    })
+    });
+
+    document.addEventListener("mousemove", (event) => {
+        // if(event.clientX > table.offsetLeft + (table.offsetWidth/2)) return; // if there are 2 paddles then we can use this to divide the table in 2 part
+        let mouseDistanceFromTop = event.clientY; // this is the distance of the mouse point from the top of the table
+        let distanceOfTableFromTop = table.offsetTop;
+        let mousePointControl = mouseDistanceFromTop - distanceOfTableFromTop - paddle.offsetHeight/2;
+        paddleY = mousePointControl;
+        if(paddleY <= 0 || paddleY > table.offsetHeight - paddle.offsetHeight) return;
+        paddle.style.top = `${paddleY}px`;
+    });
 
 });
