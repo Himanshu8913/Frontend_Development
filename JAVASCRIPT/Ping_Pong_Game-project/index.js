@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // if(ballX > 700-20 || ballX <= 0) dx *= -1;
         // if(ballY > 400-20 || ballY <= 0) dy *= -1;
 
+        // collision of ball and paddle
+        if(ballX < paddle.offsetLeft + paddle.offsetWidth &&
+            ballY > paddle.offsetTop && 
+            ballY - ball.offsetHeight < paddle.offsetTop + paddle.offsetHeight
+        ) {
+            dx *= -1;
+        }
+        
         if(ballX > table.offsetWidth - ball.offsetWidth || ballX <= 0) dx *= -1; // change x-direction
         if(ballY > table.offsetHeight - ball.offsetHeight || ballY <= 0) dy *= -1; // change y-direction
     }, 10);
