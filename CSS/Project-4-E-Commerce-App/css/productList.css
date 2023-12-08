@@ -54,6 +54,15 @@
     flex-basis: 80%;
 }
 
+.product-img {
+    height: 400px;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .product-list-box .product-item {
     width: 30%;
     margin-right: 2%;

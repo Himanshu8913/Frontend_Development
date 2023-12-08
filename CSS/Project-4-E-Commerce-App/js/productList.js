@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             productName.classList.add("product-name", "text-center");
             productPrice.classList.add("product-price", "text-center");
 
-            productName.textContent = product.title;
+            productName.textContent = product.title.substring(0, 12) + "...";
             productPrice.textContent = `&#8377; ${product.price}`;
 
             const imageInsideProductImage = document.createElement("img");
