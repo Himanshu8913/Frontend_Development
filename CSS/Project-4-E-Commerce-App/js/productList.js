@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function fetchProducts() {
         const response = await axios.get("https://fakestoreapi.com/products");
-        console.log(response.data);
+        // console.log(response.data);
         return response.data;
     }
 
-    async function populateProducts() {
-        const products = await fetchProducts();
+    async function populateProducts(flag, customProducts) {
+        let products = customProducts;
+        if(flag == false) {
+            products = await fetchProducts();
+        }
         const productList = document.getElementById("productList");
         products.forEach(product => {
             const productItem = document.createElement("a");
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             productPrice.classList.add("product-price", "text-center");
 
             productName.textContent = product.title.substring(0, 12) + "...";
-            productPrice.textContent = `&#8377; ${product.price}`;
+            productPrice.textContent = `$ ${product.price}`;
 
             const imageInsideProductImage = document.createElement("img");
             imageInsideProductImage.src = product.image;
@@ -38,6 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
     }
-    populateProducts();
+    populateProducts(false);
+
+    const filterSearch = document.getElementById("search");
+    filterSearch.addEventListener("click", async () => {
+        const productList = document.getElementById("productList");
+        const minPrice = Number(document.getElementById("minPrice").value);
+        const maxPrice = Number(document.getElementById("maxPrice").value);
+        const products = await fetchProducts();
+        filterProducts = products.filter(product => product.price >= minPrice && product.price <= maxPrice);
+        // console.log(filterProducts);
+        productList.innerHTML = "";
+        populateProducts(true, filterProducts);
+    });
+
+    const resetFilter = document.getElementById("clear");
+    resetFilter.addEventListener("click", () =>{
+        window.location.reload();
+    });
 });
 
