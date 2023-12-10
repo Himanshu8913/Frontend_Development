@@ -14,7 +14,7 @@ async function populateCategories() {
     categories.forEach(category => {
         const categoryHolder = document.createElement("div");
         const categoryLink = document.createElement("a");
-        categoryLink.href = "#";
+        categoryLink.href = `productList.html?category=${category}`;
         categoryLink.textContent = category;
         categoryHolder.classList.add("category-item", "d-flex", "flex-row", "justify-content-center", "align-items-center",);
         categoryHolder.appendChild(categoryLink);
