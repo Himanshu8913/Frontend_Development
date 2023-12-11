@@ -76,6 +76,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         })
     }
 
+    async function downloadContentAndPopulate () {
+        Promise.all([populateProducts(false), populateCategories()])
+        .then(() => {
+            const loaderBackdrop = document.getElementById("loader-backdrop");
+            loaderBackdrop.style.display = 'none';
+        });
+    }
+    downloadContentAndPopulate();
     populateProducts(false);
     populateCategories();
 
