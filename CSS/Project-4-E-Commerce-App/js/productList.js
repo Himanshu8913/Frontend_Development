@@ -84,8 +84,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
     downloadContentAndPopulate();
-    populateProducts(false);
-    populateCategories();
 
     const filterSearch = document.getElementById("search");
     filterSearch.addEventListener("click", async () => {
