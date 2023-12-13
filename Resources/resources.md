@@ -81,3 +81,6 @@
 - http://via.placeholder.com/640x360
 - https://dummyimage.com/640x360/fff/aaa
 - https://placebear.com/640/360
+
+## Free API Documentation
+- https://github.com/public-apis/public-apis?tab=readme-ov-file
