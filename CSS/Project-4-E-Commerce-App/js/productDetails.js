@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             productDesc.textContent = product.description;
             productImg.src = product.image;
             productPrice.textContent = product.price;
+            removeLoader();
         }
     }
     populateProduct();
