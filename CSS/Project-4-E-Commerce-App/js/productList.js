@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const productItem = document.createElement("a");
             productItem.target = "_blank";
             productItem.classList.add("product-item", "text-decoration-none", "d-inline-block");
-            productItem.href = "productDetails.html";
+            productItem.href = `productDetails.html?id=${product.id}`;
 
             const productImage = document.createElement("div");
             const productName = document.createElement("div");
