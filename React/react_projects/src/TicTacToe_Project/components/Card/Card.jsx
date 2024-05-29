@@ -1,12 +1,16 @@
 import Icon from "../Icon/Icon";
 import './Card.css';
 
-function Card({ iconName }) {
+function Card({ iconName, onPlay }) {
+
+    function playMove() {
+        onPlay();
+    }
     return (
-        <div className="card">
+        <div className="card" onClick={playMove}>
             <Icon name={iconName} />
         </div>
     )
 }
 
-export default Card
+export default Card;
