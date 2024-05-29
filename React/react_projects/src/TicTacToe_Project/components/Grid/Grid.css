@@ -1,5 +1,5 @@
 .grid {
-  height: 500px;
+  height: 400px;
   width: 500px;
   display: flex;
   justify-content: space-between;
@@ -9,4 +9,18 @@
 
 .turn-highlight {
   color: white;
+}
+
+.grid-wrapper {
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+.reset {
+  padding: 1rem;
+  color: white;
+  background-color: var(--resetGreen);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
 }
